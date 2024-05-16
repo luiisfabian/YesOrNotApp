@@ -14,9 +14,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (_) {
-            ChatProvider();
-          },
+          create: (_) => ChatProvider()
+         
           // builder: (context, child) {
           //   return Text(context.watch<ChatProvider>().toString());
           // },
